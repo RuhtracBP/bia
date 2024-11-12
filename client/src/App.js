@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Tasks from "./components/Tasks";
-import AddTask from "./components/AddTask";
+import React, { useEffect, useState } from "react";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import About from "./components/About";
+import AddTask from "./components/AddTask";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Tasks from "./components/Tasks";
 const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:8080";
 
 function App() {
@@ -100,7 +100,7 @@ function App() {
                   onToggle={toggleReminder}
                 />
               ) : (
-                "Nenhuma tarefa nesse momento"
+                "Nenhuma tarefa por aqui ainda"
               )}
             </>
           )}
