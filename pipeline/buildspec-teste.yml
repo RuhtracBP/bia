@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Instalando Node 21 e NPM
-      - curl -fsSL https://rom.nodesource.com/setup_21.x | sudo -E bash -
+      - curl -fsSL https://rpm.nodesource.com/setup_21.x | sudo -E bash -
       - sudo yum install nodejs -y
   build:
     commands:
