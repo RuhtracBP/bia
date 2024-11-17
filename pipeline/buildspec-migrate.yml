@@ -10,4 +10,5 @@ phases:
     commands:
       - npm install --loglevel=error
       - echo Rodando as migrations
+      - codebuild-breakpoint
       - npx sequelize db:migrate
